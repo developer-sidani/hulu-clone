@@ -1,13 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
+import { Header } from '../components'
 
 const Home = () => (
     <>
       <Head>
         <title>Hulu Clone | Sidani</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-xl">Let&apos;s Build Hulu Clone!!</h1>
       {/*  Header */}
+      <Header />
       {/* Nav */}
       {/*  Results */}
     </>
