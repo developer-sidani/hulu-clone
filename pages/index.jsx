@@ -2,12 +2,9 @@ import React from 'react'
 import Head from 'next/head'
 import { Header, Nav, Results } from '../components'
 import { requests } from '../utils'
+import { tmdbBaseUrl } from '../constants'
 
-const tmdbBaseUrl = 'https://api.themoviedb.org/3'
-
-const Home = ({ results }) => {
-  console.log(results)
-  return (
+const Home = ({ results }) => (
   <>
     <Head>
       <title>Hulu Clone | Sidani</title>
@@ -15,10 +12,9 @@ const Home = ({ results }) => {
     </Head>
     <Header />
     <Nav />
-    <Results />
+    <Results results={results} />
   </>
-  )
-}
+)
 
 export default Home
 
