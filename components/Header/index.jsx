@@ -9,7 +9,6 @@ const Header = () => (
       justify-between items-center h-auto"
     >
       <div className="flex flex-grow justify-evenly max-w-2xl">
-      {/*  Header Items */}
         {headerItems.map(({ _id, icon, title }) => (
             <HeaderItem
               key={_id}

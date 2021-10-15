@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { Header } from '../components'
+import { Header, Nav } from '../components'
 
 const Home = () => (
     <>
@@ -8,9 +8,8 @@ const Home = () => (
         <title>Hulu Clone | Sidani</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*  Header */}
       <Header />
-      {/* Nav */}
+      <Nav />
       {/*  Results */}
     </>
 )
