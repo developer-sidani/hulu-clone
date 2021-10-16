@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Image from 'next/image'
 import { ThumbUpIcon } from '@heroicons/react/outline'
 import { tmdbImageUrl } from '../../constants'
 
-const ThumbNail = ({ res }) => (
-  <div className="p-2 group cursor-pointer
+const ThumbNail = forwardRef(({ res }, ref) => (
+  <div
+    ref={ref}
+    className="p-2 group cursor-pointer
   transition duration-200 ease-in transform
   sm:hover:scale-105 hover:z-50"
   >
@@ -34,6 +36,6 @@ const ThumbNail = ({ res }) => (
       </p>
     </div>
   </div>
-)
+))
 
 export { ThumbNail }
